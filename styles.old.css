@@ -172,6 +172,25 @@ footer {
     border: none;
 }
 
+.button.return-button {
+    background: linear-gradient(to right, #ff6347, #9370DB);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    width: fit-content;
+}
+
+.button.return-button:hover {
+    opacity: 0.8;
+}
+
 @media (min-width: 1024px) {
     .video-container video {
         width: 640px;
@@ -187,7 +206,7 @@ footer {
         padding: 8px;
         font-size: 12px;
     }
-    .page-nav-button {
+    .footer-button {
         padding: 8px 16px;
         font-size: 14px;
     }
