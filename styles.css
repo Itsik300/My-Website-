@@ -9,6 +9,18 @@ body {
     align-items: center;
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 header {
     display: flex;
     justify-content: flex-end;
@@ -30,6 +42,9 @@ header {
     cursor: pointer;
     text-decoration: none;
     font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
 }
 
 .login-button:hover {
@@ -104,10 +119,20 @@ button:hover {
     transition: all 0.3s ease;
     text-decoration: none;
     font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
 }
 
 .button:hover {
     background: linear-gradient(to right, #3367d6, #4285f4);
+}
+
+.site-icon {
+    width: 1.1em;
+    height: 1.1em;
+    flex: 0 0 auto;
+    border-radius: 3px;
 }
 
 .footer-button {

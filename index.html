@@ -6,99 +6,100 @@
     <link rel="icon" href="favicon.png" type="image/png">
     <title>Полезные Ссылки</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
     <meta name="description" content="Страница с быстрым доступом к поиску Google и популярным сайтам.">
 </head>
 <body>
     <header>
-        <a href="https://mail.google.com/" target="_blank" class="login-button" rel="noopener"><i class="fas fa-envelope"></i> Войти</a>
+        <a href="https://mail.google.com/" target="_blank" class="login-button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fmail.google.com%2F&amp;sz=32" alt="" aria-hidden="true"> Войти</a>
     </header>
     <main>
         <h1>Google Search</h1>
-        <form action="https://www.google.com/search" method="GET" target="_blank">
-            <input type="text" name="q" placeholder="Search...">
+        <form action="https://www.google.com/search" method="GET" target="_blank" rel="noopener noreferrer">
+            <label for="search-query" class="sr-only">Поисковый запрос</label>
+            <input id="search-query" type="text" name="q" placeholder="Search...">
             <button type="submit">Search</button>
         </form>
 
         <section>
             <h2 class="category-title">Социальные сети</h2>
             <div class="buttons">
-                <a href="https://www.youtube.com/" target="_blank" class="button" rel="noopener"><i class="fab fa-youtube"></i> YouTube</a>
-                <a href="https://www.facebook.com/" target="_blank" class="button" rel="noopener"><i class="fab fa-facebook"></i> Facebook</a>
-                <a href="https://www.instagram.com/" target="_blank" class="button" rel="noopener"><i class="fab fa-instagram"></i> Instagram</a>
-                <a href="https://www.twitter.com/" target="_blank" class="button" rel="noopener"><i class="fab fa-twitter"></i> Twitter</a>
-                <a href="https://vk.com/id551649082/" target="_blank" class="button" rel="noopener"><i class="fab fa-vk"></i> ВКонтакте</a>
-                <a href="https://discord.com/channels/1007000829741506630/1007000829741506633" target="_blank" class="button" rel="noopener"><i class="fab fa-discord"></i> Discord</a>
-                <a href="https://www.tiktok.com/explore" target="_blank" class="button" rel="noopener"><i class="fab fa-tiktok"></i> TIKTOK</a>
+                <a href="https://www.youtube.com/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fwww.youtube.com%2F&amp;sz=32" alt="" aria-hidden="true"> YouTube</a>
+                <a href="https://www.facebook.com/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fwww.facebook.com%2F&amp;sz=32" alt="" aria-hidden="true"> Facebook</a>
+                <a href="https://www.instagram.com/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fwww.instagram.com%2F&amp;sz=32" alt="" aria-hidden="true"> Instagram</a>
+                <a href="https://www.twitter.com/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fwww.twitter.com%2F&amp;sz=32" alt="" aria-hidden="true"> Twitter</a>
+                <a href="https://vk.com/id551649082/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fvk.com%2Fid551649082%2F&amp;sz=32" alt="" aria-hidden="true"> ВКонтакте</a>
+                <a href="https://discord.com/channels/1007000829741506630/1007000829741506633" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fdiscord.com%2Fchannels%2F1007000829741506630%2F1007000829741506633&amp;sz=32" alt="" aria-hidden="true"> Discord</a>
+                <a href="https://www.tiktok.com/explore" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fwww.tiktok.com%2Fexplore&amp;sz=32" alt="" aria-hidden="true"> TIKTOK</a>
             </div>
         </section>
 
         <section>
             <h2 class="category-title">Новостные сайты и другие </h2>
             <div class="buttons">
-                <a href="https://news.startpage.co.il/russian/" target="_blank" class="button" rel="noopener"><i class="fas fa-newspaper"></i> StartPage</a>
-                <a href="https://www.yaplakal.com/" target="_blank" class="button" rel="noopener"><i class="fas fa-comments"></i> Я Плакал</a>
-                <a href="https://habr.com/ru/articles/" target="_blank" class="button"><i class="fa-brands fa-jedi-order"></i> Хабр</a>
-                <a href="https://mspoweruser.com/" target="_blank" class="button" rel="noopener"><i class="fas fa-laptop"></i> Последние технические новости</a>
-                <a href="https://neurohive.io/ru/" target="_blank" class="button" rel="noopener"><i class="fas fa-brain"></i> Neurohive Новости </a>
-                <a href="https://club.dns-shop.ru/" target="_blank" class="button" rel="noopener"><i class="fas fa-store"></i> DNS Клуб </a>
-                <a href="https://remontka.pro/" target="_blank" class="button" rel="noopener"><i class="fas fa-tools"></i> Remontka.Pro</a>
-                <a href="https://kod.ru/" target="_blank" class="button"><i class="fas fa-tools"></i>КОД ДУРОВА</a>
-                <a href="https://letsconvene.im/app/#/" target="_blank" class="button" rel="noopener"><i class="fas fa-users"></i> Комнаты</a>
-                <a href="https://ru.pinterest.com/" target="_blank" class="button"><i class="fa-brands fa-pinterest"></i> Pinterest</a>
-                <a href="https://translate.google.com/?hl=ru&sl=ru&tl=en&op=translate" target="_blank" class="button" rel="noopener"><i class="fas fa-language"></i> Переводчик </a>
-                <a href="https://translit.ru/" target="_blank" class="button" rel="noopener"><i class="fas fa-text-width"></i> Translit</a>
-                <a href="https://www.reddit.com/" target="_blank" class="button"><i class="fas fa-text-width"></i> Reddit</a>
-                <a href="https://fmhy.net/" target="_blank" class="button"><i class="fas fa-text-width"></i> FMHY</a>
+                <a href="https://news.startpage.co.il/russian/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fnews.startpage.co.il%2Frussian%2F&amp;sz=32" alt="" aria-hidden="true"> StartPage</a>
+                <a href="https://www.yaplakal.com/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fwww.yaplakal.com%2F&amp;sz=32" alt="" aria-hidden="true"> Я Плакал</a>
+                <a href="https://habr.com/ru/articles/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fhabr.com%2Fru%2Farticles%2F&amp;sz=32" alt="" aria-hidden="true"> Хабр</a>
+                <a href="https://mspoweruser.com/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fmspoweruser.com%2F&amp;sz=32" alt="" aria-hidden="true"> Последние технические новости</a>
+                <a href="https://neurohive.io/ru/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fneurohive.io%2Fru%2F&amp;sz=32" alt="" aria-hidden="true"> Neurohive Новости </a>
+                <a href="https://club.dns-shop.ru/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fclub.dns-shop.ru%2F&amp;sz=32" alt="" aria-hidden="true"> DNS Клуб </a>
+                <a href="https://remontka.pro/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fremontka.pro%2F&amp;sz=32" alt="" aria-hidden="true"> Remontka.Pro</a>
+                <a href="https://kod.ru/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fkod.ru%2F&amp;sz=32" alt="" aria-hidden="true"> КОД ДУРОВА</a>
+                <a href="https://letsconvene.im/app/#/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fletsconvene.im%2Fapp%2F%23%2F&amp;sz=32" alt="" aria-hidden="true"> Комнаты</a>
+                <a href="https://ru.pinterest.com/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fru.pinterest.com%2F&amp;sz=32" alt="" aria-hidden="true"> Pinterest</a>
+                <a href="https://translate.google.com/?hl=ru&sl=ru&tl=en&op=translate" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Ftranslate.google.com%2F%3Fhl%3Dru%26sl%3Dru%26tl%3Den%26op%3Dtranslate&amp;sz=32" alt="" aria-hidden="true"> Переводчик </a>
+                <a href="https://translit.ru/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Ftranslit.ru%2F&amp;sz=32" alt="" aria-hidden="true"> Translit</a>
+                <a href="https://www.reddit.com/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fwww.reddit.com%2F&amp;sz=32" alt="" aria-hidden="true"> Reddit</a>
+                <a href="https://fmhy.net/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Ffmhy.net%2F&amp;sz=32" alt="" aria-hidden="true"> FMHY</a>
             </div>
         </section>
 
         <section>
             <h2 class="category-title">Сайты с искусственным интеллектом</h2>
             <div class="buttons">
-                <a href="https://chat.openai.com/chat/" target="_blank" class="button" rel="noopener"><i class="fas fa-comments"></i> ChatGPT</a>
-                <a href="https://gemini.google.com/u/1/app?hl=ru" target="_blank" class="button" rel="noopener"><i class="fab fa-google"></i> GEMINI</a>
-                <a href="https://platform.openai.com/playground" target="_blank" class="button" rel="noopener"><i class="fas fa-cogs"></i> Playground</a>
-                <a href="https://you.com/search?q=who+are+you&tbm=youchat&cfr=chat/" target="_blank" class="button" rel="noopener"><i class="fas fa-comments"></i> ChatYOU</a>
-                <a href="https://groq.com/" target="_blank" class="button" rel="noopener"><i class="fas fa-robot"></i> Groq</a>
-                <a href="https://chat.mistral.ai/chat" target="_blank" class="button" rel="noopener"><i class="fas fa-robot"></i> Mistral AI</a>
-                <a href="https://gptstore.ai/gpts?page=1/" target="_blank" class="button" rel="noopener"><i class="fas fa-star"></i> Лучшие GPT ChatGPT </a>
-                <a href="https://www.perplexity.ai/" target="_blank" class="button" rel="noopener"><i class="fas fa-question-circle"></i> Perplexity</a>
-                <a href="https://poe.com/" target="_blank" class="button" rel="noopener"><i class="fas fa-comment-dots"></i> Poe</a>
-                <a href="https://www.phind.com/" target="_blank" class="button" rel="noopener"><i class="fas fa-search"></i> Phind</a>
-                <a href="https://ya.ru/?npr=1&utm_referrer=https%3A%2F%2Fyandex.ru%2F&neuro=1" target="_blank" class="button" rel="noopener"><i class="fas fa-brain"></i> Нейро</a>
-                <a href="https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx/" target="_blank" class="button" rel="noopener"><i class="fas fa-search"></i> COPILOT</a>
-                <a href="https://andisearch.com/" target="_blank" class="button" rel="noopener"><i class="fas fa-search"></i> Andi</a>
-                <a href="https://overallgpt.com/" target="_blank" class="button" rel="noopener"><i class="fas fa-th"></i> ВсегоGPT</a>
-                <a href="https://crayonai.net/ai-assistant" target="_blank" class="button" rel="noopener"><i class="fas fa-pencil-alt"></i> ИИ-помощник</a>
-                <a href="https://claude.ai/new" target="_blank" class="button" rel="noopener"><i class="fas fa-robot"></i> Claude</a>
-                <a href="https://huggingface.co/chat/" target="_blank" class="button" rel="noopener"><i class="fas fa-comments"></i> HuggingChat </a>
-                <a href="https://chat.deepseek.com/" target="_blank" class="button"><i class="fas fa-comments"></i> DEEPSEEK</a>
-                <a href="https://x.com/i/grok/" target="_blank" class="button"><i class="fas fa-comments"></i> GROK</a>
-                <a href="https://github.com/copilot" target="_blank" class="button"><i class="fas fa-comments"></i> GithubCopilot</a>
-                <a href="https://chat.qwenlm.ai/" target="_blank" class="button"><i class="fas fa-comments"></i> Qwin Chat</a>
-                <a href="https://kimi.ai/chat/empty/" target="_blank" class="button"><i class="fas fa-comments"></i> Kimi Ai</a>
+                <a href="https://chat.openai.com/chat/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fchat.openai.com%2Fchat%2F&amp;sz=32" alt="" aria-hidden="true"> ChatGPT</a>
+                <a href="https://gemini.google.com/u/1/app?hl=ru" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fgemini.google.com%2Fu%2F1%2Fapp%3Fhl%3Dru&amp;sz=32" alt="" aria-hidden="true"> GEMINI</a>
+                <a href="https://platform.openai.com/playground" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fplatform.openai.com%2Fplayground&amp;sz=32" alt="" aria-hidden="true"> Playground</a>
+                <a href="https://you.com/search?q=who+are+you&tbm=youchat&cfr=chat/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fyou.com%2Fsearch%3Fq%3Dwho%2Bare%2Byou%26tbm%3Dyouchat%26cfr%3Dchat%2F&amp;sz=32" alt="" aria-hidden="true"> ChatYOU</a>
+                <a href="https://groq.com/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fgroq.com%2F&amp;sz=32" alt="" aria-hidden="true"> Groq</a>
+                <a href="https://chat.mistral.ai/chat" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fchat.mistral.ai%2Fchat&amp;sz=32" alt="" aria-hidden="true"> Mistral AI</a>
+                <a href="https://gptstore.ai/gpts?page=1/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fgptstore.ai%2Fgpts%3Fpage%3D1%2F&amp;sz=32" alt="" aria-hidden="true"> Лучшие GPT ChatGPT </a>
+                <a href="https://www.perplexity.ai/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fwww.perplexity.ai%2F&amp;sz=32" alt="" aria-hidden="true"> Perplexity</a>
+                <a href="https://poe.com/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fpoe.com%2F&amp;sz=32" alt="" aria-hidden="true"> Poe</a>
+                <a href="https://www.phind.com/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fwww.phind.com%2F&amp;sz=32" alt="" aria-hidden="true"> Phind</a>
+                <a href="https://ya.ru/?npr=1&utm_referrer=https%3A%2F%2Fyandex.ru%2F&neuro=1" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fya.ru%2F%3Fnpr%3D1%26utm_referrer%3Dhttps%253A%252F%252Fyandex.ru%252F%26neuro%3D1&amp;sz=32" alt="" aria-hidden="true"> Нейро</a>
+                <a href="https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fwww.bing.com%2Fsearch%3Fq%3DBing%2BAI%26showconv%3D1%26FORM%3Dhpcodx%2F&amp;sz=32" alt="" aria-hidden="true"> COPILOT</a>
+                <a href="https://andisearch.com/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fandisearch.com%2F&amp;sz=32" alt="" aria-hidden="true"> Andi</a>
+                <a href="https://overallgpt.com/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Foverallgpt.com%2F&amp;sz=32" alt="" aria-hidden="true"> ВсегоGPT</a>
+                <a href="https://crayonai.net/ai-assistant" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fcrayonai.net%2Fai-assistant&amp;sz=32" alt="" aria-hidden="true"> ИИ-помощник</a>
+                <a href="https://claude.ai/new" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fclaude.ai%2Fnew&amp;sz=32" alt="" aria-hidden="true"> Claude</a>
+                <a href="https://huggingface.co/chat/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fhuggingface.co%2Fchat%2F&amp;sz=32" alt="" aria-hidden="true"> HuggingChat </a>
+                <a href="https://chat.deepseek.com/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fchat.deepseek.com%2F&amp;sz=32" alt="" aria-hidden="true"> DEEPSEEK</a>
+                <a href="https://x.com/i/grok/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fx.com%2Fi%2Fgrok%2F&amp;sz=32" alt="" aria-hidden="true"> GROK</a>
+                <a href="https://github.com/copilot" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fgithub.com%2Fcopilot&amp;sz=32" alt="" aria-hidden="true"> GithubCopilot</a>
+                <a href="https://chat.qwenlm.ai/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fchat.qwenlm.ai%2F&amp;sz=32" alt="" aria-hidden="true"> Qwin Chat</a>
+                <a href="https://kimi.ai/chat/empty/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fkimi.ai%2Fchat%2Fempty%2F&amp;sz=32" alt="" aria-hidden="true"> Kimi Ai</a>
             </div>
         </section>
 
         <section>
             <h2 class="category-title">Сайты для создания-редактирования текста и изображений </h2>
             <div class="buttons">
-                <a href="https://www.shakker.ai/aigenerator" target="_blank" class="button" rel="noopener"><i class="fas fa-image"></i> AIgenerator</a>
-                <a href="https://myneuralnetworks.ru/generating_images_from_text/" target="_blank" class="button" rel="noopener"><i class="fas fa-image"></i> Акулы нейронных сетей</a>
-                <a href="https://klingai.com/" target="_blank" class="button" rel="noopener"><i class="fas fa-paint-brush"></i> KLING AI</a>
-                <a href="https://www.krea.ai/apps/image/flux" target="_blank" class="button"><i class="fas fa-paint-brush"></i> Krea</a>
-                <a href="https://app.nichetensor.com/?feature=textToImage" target="_blank" class="button" rel="noopener"><i class="fas fa-image"></i> ГенерКартинок</a>
-                <a href="https://glif.app/@001/glifs/clzgvha5a00041aepvz2h4zi4" target="_blank" class="button" rel="noopener"><i class="fas fa-image"></i> FLUX.1-pro</a>
-                <a href="https://huggingface.co/spaces/black-forest-labs/FLUX.1-schnell" target="_blank" class="button" rel="noopener"><i class="fas fa-image"></i> FLUX.1-schnell</a>
-                <a href="https://www.blinkshot.io/" target="_blank" class="button" rel="noopener"><i class="fas fa-camera"></i> BlinKshot AI</a>
-                <a href="https://crayonai.net/ai-assistant" target="_blank" class="button" rel="noopener"><i class="fas fa-pencil-alt"></i> ИИ Карандаш </a>
-                <a href="https://www.iloveimg.com/ru" target="_blank" class="button" rel="noopener"><i class="fas fa-tools"></i> Все инструменты для изображений</a>
-                <a href="https://glyphy.io/?hl=en" target="_blank" class="button" rel="noopener"><i class="fas fa-font"></i> Глифы</a>
-                <a href="https://www.i2img.com/ru/?hl=en" target="_blank" class="button" rel="noopener"><i class="fas fa-image"></i> i2IMG</a>
-                <a href="https://boxicons.com/" target="_blank" class="button" rel="noopener"><i class="fas fa-box"></i> Boxicons</a>
-                <a href="https://www.vidmore.com/ru/watermark-remover/#" target="_blank" class="button" rel="noopener"><i class="fas fa-eraser"></i> Удаления водяных знаков</a>
-                <a href="https://neuralwriter.com/ru/prompt-tool/#progress=157" target="_blank" class="button" rel="noopener"><i class="fas fa-lightbulb"></i> Генератор промптов ChatGPT</a>
+                <a href="https://www.shakker.ai/aigenerator" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fwww.shakker.ai%2Faigenerator&amp;sz=32" alt="" aria-hidden="true"> AIgenerator</a>
+                <a href="https://myneuralnetworks.ru/generating_images_from_text/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fmyneuralnetworks.ru%2Fgenerating_images_from_text%2F&amp;sz=32" alt="" aria-hidden="true"> Акулы нейронных сетей</a>
+                <a href="https://klingai.com/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fklingai.com%2F&amp;sz=32" alt="" aria-hidden="true"> KLING AI</a>
+                <a href="https://www.krea.ai/apps/image/flux" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fwww.krea.ai%2Fapps%2Fimage%2Fflux&amp;sz=32" alt="" aria-hidden="true"> Krea</a>
+                <a href="https://app.nichetensor.com/?feature=textToImage" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fapp.nichetensor.com%2F%3Ffeature%3DtextToImage&amp;sz=32" alt="" aria-hidden="true"> ГенерКартинок</a>
+                <a href="https://glif.app/@001/glifs/clzgvha5a00041aepvz2h4zi4" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fglif.app%2F%40001%2Fglifs%2Fclzgvha5a00041aepvz2h4zi4&amp;sz=32" alt="" aria-hidden="true"> FLUX.1-pro</a>
+                <a href="https://huggingface.co/spaces/black-forest-labs/FLUX.1-schnell" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fhuggingface.co%2Fspaces%2Fblack-forest-labs%2FFLUX.1-schnell&amp;sz=32" alt="" aria-hidden="true"> FLUX.1-schnell</a>
+                <a href="https://www.blinkshot.io/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fwww.blinkshot.io%2F&amp;sz=32" alt="" aria-hidden="true"> BlinKshot AI</a>
+                <a href="https://crayonai.net/ai-assistant" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fcrayonai.net%2Fai-assistant&amp;sz=32" alt="" aria-hidden="true"> ИИ Карандаш </a>
+                <a href="https://www.iloveimg.com/ru" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fwww.iloveimg.com%2Fru&amp;sz=32" alt="" aria-hidden="true"> Все инструменты для изображений</a>
+                <a href="https://glyphy.io/?hl=en" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fglyphy.io%2F%3Fhl%3Den&amp;sz=32" alt="" aria-hidden="true"> Глифы</a>
+                <a href="https://www.i2img.com/ru/?hl=en" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fwww.i2img.com%2Fru%2F%3Fhl%3Den&amp;sz=32" alt="" aria-hidden="true"> i2IMG</a>
+                <a href="https://boxicons.com/" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fboxicons.com%2F&amp;sz=32" alt="" aria-hidden="true"> Boxicons</a>
+                <a href="https://www.vidmore.com/ru/watermark-remover/#" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fwww.vidmore.com%2Fru%2Fwatermark-remover%2F%23&amp;sz=32" alt="" aria-hidden="true"> Удаления водяных знаков</a>
+                <a href="https://neuralwriter.com/ru/prompt-tool/#progress=157" target="_blank" class="button" rel="noopener noreferrer"><img class="site-icon" src="https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fneuralwriter.com%2Fru%2Fprompt-tool%2F%23progress%3D157&amp;sz=32" alt="" aria-hidden="true"> Генератор промптов ChatGPT</a>
             </div>
         </section>
 
