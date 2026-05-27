@@ -224,8 +224,18 @@ footer {
 }
 
 @media (max-width: 600px) {
+    header {
+        position: static;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 16px 0;
+    }
+    main {
+        padding-top: 10px;
+    }
     h1 {
         font-size: 28px;
+        margin-top: 8px;
     }
     .button {
         padding: 8px;
