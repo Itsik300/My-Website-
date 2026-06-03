@@ -187,14 +187,14 @@ footer {
 
 .video-container {
     margin-bottom: 20px;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .video-container video {
     width: 100%;
     max-width: 640px;
     height: auto;
-    border: none;  
+    border: none;
 }
 
 .button.return-button { 
